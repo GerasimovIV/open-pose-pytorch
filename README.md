@@ -27,7 +27,7 @@ This repository is based on the paper [Real-time 2D Multi-Person Pose Estimation
 3. run `pip install -r requirements.txt`
 4. run `python demo.py --checkpoint-path ./checkpoints/checkpoint_iter_370000.pth --video ./video_files/tik_tok_kakashi.mp4`. 
 * If you want to run only on cpu you should add `--cpu`. (Instead of `--video ./video_files/tik_tok_kakashi.mp4` you can use your custom video)
-
+* By default the processed video and the .json file will be recorded in the same folder where the original was, however there is an opportunity to change this by setting `--filename_poses filename.json` (for .json file) and `--out_filename_video filename.mp4` (for video file)
 ## Understanding of .json file
 
 .json file will contain the information about any persons and any of their limbs in any frame. 
