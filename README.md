@@ -94,7 +94,7 @@ pose_mass = [nose,
 ```
 
 ## Speed test on GPU
-This repository was tested in the [Google Colab](). That means that on the video card Tesla K80. (you can compare it with GeForce GTX 1080 Ti [here](https://technical.city/ru/video/GeForce-GTX-1080-Ti-protiv-Tesla-K80)) According to the [this source](https://technical.city/ru/video/GeForce-GTX-1080-Ti-protiv-Tesla-K80) the process on the GeForce GTX 1080 Ti will be 2 times faster then on the Tesla K80.
+This repository was tested in the [Google Colab](https://research.google.com/colaboratory/). That means that on the video card Tesla K80. (you can compare it with GeForce GTX 1080 Ti [here](https://technical.city/ru/video/GeForce-GTX-1080-Ti-protiv-Tesla-K80)) According to the [this source](https://technical.city/ru/video/GeForce-GTX-1080-Ti-protiv-Tesla-K80) the process on the GeForce GTX 1080 Ti will be 2 times faster then on the Tesla K80.
 
 In the Google Colab platform I achieved the result in speed: 38.07it/s without writing .json file and 27.07it/s with writing .json file
 
