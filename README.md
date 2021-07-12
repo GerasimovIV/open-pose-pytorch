@@ -97,3 +97,11 @@ pose_mass = [nose,
 This repository was tested in the [Google Colab](). That means that on the video card Tesla K80. (you can compare it with GeForce GTX 1080 Ti [here](https://technical.city/ru/video/GeForce-GTX-1080-Ti-protiv-Tesla-K80)) According to the [this source](https://technical.city/ru/video/GeForce-GTX-1080-Ti-protiv-Tesla-K80) the process on the GeForce GTX 1080 Ti will be 2 times faster then on the Tesla K80.
 
 In the Google Colab platform I achieved the result in speed: 38.07it/s without writing .json file and 27.07it/s with writing .json file
+
+### My suggestion for speeding up
+In this repository the processing of video like that:
+1. Take one frame from vide
+2. Do .unsqueese(0) (creating zero dimension like bath imitation with batch_size = 1)
+3. Process frame
+
+However, due to the not very large weight of the network itself, it is possible to send a batch larger than 1 during testing, for example, send the first 64 frames from the video immediately in an ordered form. In this case, it turns out to process several frames from the video at once, which can significantly speed up the processing process.
